@@ -1,0 +1,148 @@
+.slider{
+    height: 100vh;
+    .carousel{
+        position: relative;
+        .carousel-indicators{
+            display: none;
+        }
+        .carousel-inner{
+            .item{
+                height: 100vh;
+                transition-property: opacity;
+                background-size: cover;
+                background-position: center;
+                &:first-child{
+                    background-image: url(../img/slide-home-1.jpg);
+                }
+                &:last-child{
+                    background-image: url(../img/slide-home-2.jpg);
+                }
+                .carousel-caption{
+                    height: 100vh;
+                    width: 100vw;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    .title{
+                        height: 30%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+                &#nautla{
+                    background-image: url(../img/Nautla/Fondo-Nautla.jpg);   
+                }
+                &#tlaxcala{
+                    background-image: url(../img/Tlaxcala/T52-0.jpg);
+                    .carousel-caption{
+                        .title{
+                            height: 20%;
+                        }
+                    } 
+                }
+                &#vasconcelos{
+                    background-image: url(../img/Vasconcelos/JV79-0.jpg);   
+                    .carousel-caption{
+                        .title{
+                            height: 20%;
+                        }
+                    } 
+                }
+            }
+            .item,
+            .active.left,
+            .active.right {
+                opacity: 0;
+            }
+    
+            .active,
+            .next.left,
+            .prev.right {
+                opacity: 1;
+            }
+    
+            .next,
+            .prev,
+            .active.left,
+            .active.right {
+                left: 0;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .carousel-control{
+            display: none;
+        } 
+    }
+}
+
+@media screen and (max-width: 991px){
+    .slider{
+        .carousel{
+            .carousel-inner{
+                .item{
+                    &#nautla{
+                        .carousel-caption{
+                            .title{
+                                height: 25%;
+                            }
+                        }
+                    }
+                    &#tlaxcala{
+                        .carousel-caption{
+                            .title{
+                                height: 18%;
+                            }
+                        }
+                    }
+                    &#vasconcelos{
+                        .carousel-caption{
+                            .title{
+                                height: 16%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .slider{
+        .carousel{
+            .carousel-inner{
+                .item{
+                    &#nautla{
+                        .carousel-caption{
+                            .title{
+                                height: 20%;
+                            }
+                        }
+                    }
+                    &#tlaxcala{
+                        .carousel-caption{
+                            .title{
+                                height: 13%;
+                            }
+                        }
+                    }
+                    &#vasconcelos{
+                        .carousel-caption{
+                            .title{
+                                height: 11%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

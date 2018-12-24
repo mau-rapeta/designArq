@@ -1,0 +1,95 @@
+.header{
+    background: linear-gradient($color1, transparent);
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    z-index: 1000;
+    .container{
+        height: 100%;
+        .header__container{
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            .header__logo-box{
+                height: 55%;
+                .header__logo{
+                    height: 100%;
+                }
+            }
+            .header__nav{
+                width: 60%;
+                #navigation{
+                    .nav{
+                        list-style: none;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            display: inline-block;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #fff;
+                                background-color: transparent;
+                                padding: 7px 10px;
+                                &:hover {
+                                    border: solid 1px #fff;
+                                }
+                            }
+                            .tel-icon{
+                                display: inline-block;
+                                width: 25px;
+                                margin-right: 10px;
+                            }
+                            &.active {
+                                a{
+                                    border: solid 1px #fff;
+                                    transition: all .5s ease-out;
+                                }
+                            }
+                            &:last-child{
+                                padding: 5px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header__mov-button-box{
+                height: 50%;
+                .header__mov-button{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .header{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .header{
+        height: 100px;
+        .container{
+            .header__container{
+                .header__mov-button-box{
+                    height: 35%;
+                }
+            }
+        }
+    }
+}

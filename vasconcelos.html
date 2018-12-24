@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>J.Vasconcelos | Design Arquitectos</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d71f230c9b.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+</head>
+<body data-spy="scroll" data-target="#navigation" data-offset="0">
+
+    <!-- Desktop Nav -->
+
+<header class="header">
+    <div class="container">
+        <div class="header__container">
+            <div class="header__logo-box">
+                <a href="index.html"><img src="img/Logo.svg" alt="logo" class="header__logo"></a>
+            </div>
+            <div class="header__nav onlyDesktop">
+                <nav id="navigation">
+                    <ul class="nav">
+                        <li><a href="index.html" class="page-scroll">home</a></li>
+                        <li><a href="#slider" class="page-scroll">proyectos en curso</a></li>
+                        <li><a href="#contacto" class="page-scroll">contacto</a></li>
+                        <li><img src="img/menu-telefono.svg" class="tel-icon">(55) 55644130</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__mov-button-box onlyMobile">
+                <input type="image" src="img/menu.png" class="header__mov-button" id="showLeft">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Nav -->
+
+<nav id="navMob" class="navMob onlyMobile">
+    <ul class="nav">
+        <li><a href="index.html" class="page-scroll navLink">home</a></li>
+        <li><a href="#zona" class="page-scroll navLink">proyectos en curso</a></li>
+        <li><a href="#contacto" class="page-scroll navLink">contacto</a></li>
+        <li id="tel"><img src="img/menu-telefono.svg" class="tel-icon">(55) 55644130</li>
+    </ul>
+</nav>
+
+    <!-- sección con slider principal -->
+    
+<section id="slider" class="slider">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active" id="vasconcelos">
+                <div class="carousel-caption">
+                    <div class="title">
+                        <img src="img/Vasconcelos/JV-Home.svg">
+                    </div>
+                    <!-- <div class="inner__scroll-down">
+                        <a href="#quote" class="page-scroll"><img src="img/scroll_down.png" alt="scroll-down" class="scroll-down"></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background: none;">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background: none;">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-1.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-1.jpg" id="image-verti">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-2.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-2.jpg" id="image-horiz">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-3.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-3.jpg" id="image-verti">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-4.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-4.jpg" class="h-image"  id="image-horiz">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-5.jpg" data-effect="mfp-zoom-in" class="image-link" >
+                    <img src="img/Vasconcelos/Galería/JV79-5.jpg" class="v-image" id="image-verti">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-6.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-6.jpg" class="hh-image" id="image-horiz">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-7.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-7.jpg" id="image-verti">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-8.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-8.jpg" id="image-horiz">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="img/Vasconcelos/Galería/JV79-9.jpg" data-effect="mfp-zoom-in" class="image-link">
+                    <img src="img/Vasconcelos/Galería/JV79-9.jpg"  id="image-verti">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Descripción de los Despartamentos -->
+
+<section id="deptos" class="deptos">
+    <div id="vasconcelos" class="container">
+        <h2 class="deptos__title">Departamentos</h2>
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#first">43.5 m<sup>2</sup></a></li>
+            <li><a data-toggle="pill" href="#second">43.5 m<sup>2</sup></a></li>
+            <li><a data-toggle="pill" href="#third">67.9 m<sup>2</sup></a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="first" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Tipo-1.jpg" class="general-img">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/LightTIPO-1.jpg" class="plano-img">
+                            <a href="img/Vasconcelos/LightTIPO-1.jpg" data-effect="mfp-zoom-in" class="image-link-zoom">
+                                <img src="img/Iconos/zoom.svg" class="zoom-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Planta_Tipo1.jpg" class="render-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="descrip__title">Descripción</h2>
+                    <div class="descrip__content">
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Recamara.svg" class="descrip__icon">
+                            <p class="descrip__text">1 Recámara</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Bano.svg" class="descrip__icon">
+                            <p class="descrip__text">1 baño</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Cocina.svg" class="descrip__icon">
+                            <p class="descrip__text">Cocina</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Sala.svg" class="descrip__icon">
+                            <p class="descrip__text">Sala</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Comedor.svg" class="descrip__icon">
+                            <p class="descrip__text">Comedor</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Roofgarden.svg" class="descrip__icon">
+                            <p class="descrip__text">Roof<br>Garden</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Balcon.svg" class="descrip__icon">
+                            <p class="descrip__text">Balcón</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Elevador.svg" class="descrip__icon">
+                            <p class="descrip__text">Elevador</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="second" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Tipo-2.jpg" class="general-img">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/LightTIPO-2.jpg" class="plano-img">
+                            <a href="img/Vasconcelos/LightTIPO-2.jpg" data-effect="mfp-zoom-in" class="image-link-zoom">
+                                <img src="img/Iconos/zoom.svg" class="zoom-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Planta_Tipo2.jpg" class="render-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="descrip__title">Descripción</h2>
+                    <div class="descrip__content">
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Recamara.svg" class="descrip__icon">
+                            <p class="descrip__text">1 Recámara</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Bano.svg" class="descrip__icon">
+                            <p class="descrip__text">1 baño</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Cocina.svg" class="descrip__icon">
+                            <p class="descrip__text">Cocina</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Sala.svg" class="descrip__icon">
+                            <p class="descrip__text">Sala</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Comedor.svg" class="descrip__icon">
+                            <p class="descrip__text">Comedor</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Roofgarden.svg" class="descrip__icon">
+                            <p class="descrip__text">Roof<br>Garden</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Balcon.svg" class="descrip__icon">
+                            <p class="descrip__text">Balcón</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Elevador.svg" class="descrip__icon">
+                            <p class="descrip__text">Elevador</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Tipo-3.jpg" class="general-img">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/LightTIPO-3.jpg" class="plano-img">
+                            <a href="img/Vasconcelos/LightTIPO-3.jpg" data-effect="mfp-zoom-in" class="image-link-zoom">
+                                <img src="img/Iconos/zoom.svg" class="zoom-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="deptos__img-box">
+                            <img src="img/Vasconcelos/Planta_Tipo3.jpg" class="render-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="descrip__title">Descripción</h2>
+                    <div class="descrip__content">
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Recamara.svg" class="descrip__icon">
+                            <p class="descrip__text">2 Recámaras</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Bano.svg" class="descrip__icon">
+                            <p class="descrip__text">2 baños</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Cocina.svg" class="descrip__icon">
+                            <p class="descrip__text">Cocina</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Sala.svg" class="descrip__icon">
+                            <p class="descrip__text">Sala</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Comedor.svg" class="descrip__icon">
+                            <p class="descrip__text">Comedor</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Lavado.svg" class="descrip__icon">
+                            <p class="descrip__text">Área de<br>lavado</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Roofgarden.svg" class="descrip__icon">
+                            <p class="descrip__text">Roof<br>Garden</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Balcon.svg" class="descrip__icon">
+                            <p class="descrip__text">Balcón</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Elevador.svg" class="descrip__icon">
+                            <p class="descrip__text">Elevador</p>
+                        </div>
+                        <div class="descrip__element">
+                            <img src="img/Iconos/Estacionamiento.svg" class="descrip__icon">
+                            <p class="descrip__text">Estacionamiento<br>(1 auto)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="location">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="map__cont">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.876150061622!2d-99.18112768478991!3d19.417756446186054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff5acb2088a3%3A0x3ea70d6c50d397da!2sCto.+Interior+Maestro+Jos%C3%A9+Vasconcelos+79%2C+San+Miguel+Chapultepec+II+Secc%2C+11850+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1515197904446" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="location__cont" id="vasconcelos">
+                    <div class="location__inner">
+                        <span class="calle">josé vasconcelos <span class="num">79</span></span>
+                        <p>colonia san miguel chapultepec</p>
+                        <p>miguel hidalgo c.p. 11850</p>
+                        <p>méxico. cdmx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<section id="contacto" class="contacto">
+    <div class="container">
+        <div class="contacto__cont">
+            <div class="contacto__form">
+                <div class="form-group">
+                    <input type="text" class="form-element" data-required="true" name="nombre" placeholder="Nombre">
+                    <input type="email" class="form-element" data-required="true" name="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-element" data-required="true" name="telefono" placeholder="Teléfono">
+                    <input type="text" class="form-element" data-required="true" name="proyecto" placeholder="Proyecto">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-element message" data-required="true" name="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="submit" value="Enviar">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Design Arquitectos | 2018</p>
+        </footer>
+    </div>
+</section>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

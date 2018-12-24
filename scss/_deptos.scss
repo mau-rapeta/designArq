@@ -1,0 +1,246 @@
+.deptos{
+    height: 1100px;
+    background-color: #fff;
+    .container{
+        &#nautla{
+            color: $color3;
+        }
+        &#tlaxcala{
+            color: #0047ba;
+            .nav{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                li{
+                    a{
+                        border-radius: 0px;
+                        border: solid 1px #0047ba;
+                        width: 130px;
+                        text-align: center;
+                        color: #0047ba;
+                        font-weight: 400;
+                    }
+                }
+                .active{
+                    a{
+                        background-color: #0047ba;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &#vasconcelos{
+            color: #0096a7;
+            .nav{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                li{
+                    a{
+                        border-radius: 0px;
+                        border: solid 1px #0096a7;
+                        width: 130px;
+                        text-align: center;
+                        color: #0096a7;
+                        font-weight: 400;
+                    }
+                }
+                .active{
+                    a{
+                        background-color: #0096a7;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        .tab-content{
+            margin-top: 30px;
+            .row{
+                margin-bottom: 20px;
+                .deptos__img-box{
+                    width: 350px;
+                    height: 480px;
+                    margin: auto;
+                    position: relative;
+                    .general-img{
+                        width: 100%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                    }
+                    .plano-img{
+                        width: 80%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                    }
+                    .zoom-icon{
+                        width: 35px;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 95%;
+                        left: 75%;
+                    }
+                    .render-img{
+                        width: 100%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                    }
+                }
+                .descrip__content{
+                    display: -webkit-box; 
+                    display: -ms-flexbox; 
+                    display: flex;
+                    height: 300px;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-top: 30px;
+                    padding: 15px;
+                    .descrip__element{
+                        height: 150px;
+                        width: 100px;
+                        text-align: center;
+                        .descrip__icon{
+                            width: 70%;
+                        }
+                        .descrip__text{
+                            color: $color3;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .deptos{
+        .container{
+            .tab-content{
+                .row{
+                    .descrip__content{
+                        justify-content: center;
+                        .descrip__element{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .deptos{
+        height: 2300px;
+        .container{
+            .tab-content{
+                .row{
+                    .deptos__img-box{
+                        width: 400px;
+                        height: 530px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 687px){
+    .deptos{
+        .container{
+            &#tlaxcala{
+                .nav{
+                    justify-content: center;
+                    li{
+                        margin: 0 5px 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 579px){
+    .deptos{
+        height: 2350px;
+        .container{
+            .tab-content{
+                .row{
+                    .deptos__img-box{
+                        width: 350px;
+                        height: 480px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 469px){
+    .deptos{
+        .container{
+            .tab-content{
+                .row{
+                    .deptos__img-box{
+                        width: 300px;
+                        height: 430px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 423px){
+    .deptos{
+        .container{
+            &#vasconcelos{
+                .nav{
+                    justify-content: center;
+                    li{
+                        margin: 0 5px 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 359px){
+    .deptos{
+        height: 2450px;
+        .container{
+            .tab-content{
+                .row{
+                    .deptos__img-box{
+                        width: 270px;
+                        height: 400px;
+                    }
+                    .descrip__content{
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.gallery{
+    height: 1500px;
+    background-color: #fff;
+    padding-top: 190px;
+    .container{
+        .row{
+            margin: 20px 0;
+            .col-xs-6{
+                text-align: center;
+                .image-link{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 20px;
+                        position: relative;
+                        &#image-verti{
+                            width: 300px;
+                            height: 400px;
+                        }
+                        &#image-horiz{
+                            width: 300px;
+                            height: 230px;
+                        }
+                    }
+                    img.v-image{
+                        position: absolute;
+                        transform: translate(0, -41%);
+                        left: 40px;
+                        width: calc(100% - 27px);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* ========== Magnific Popup CSS ========== */
+
+/* padding for main container */
+.mfp-container {
+	padding: 20px;
+}
+
+@media screen and (max-width: 1199px){
+    .gallery{
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img.v-image{
+                            left: 15px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .gallery{
+        height: 2100px;
+        padding-top: 150px;
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img.v-image{
+                            position: relative;
+                            transform: none;
+                            left: 0;
+                            width: 100%; 
+                        }
+                        img.h-image{
+                            position: absolute;
+                            transform: translate(-50%, -115%);
+                            width: calc(100% - 27px);
+                        }
+                        img.hh-image{
+                            position: absolute;
+                            transform: translate(-50%, -150%);
+                            width: calc(100% - 27px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .gallery{
+        height: 1800px;
+        padding-top: 120px;
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img{
+                            &#image-verti{
+                                width: 230px;
+                                height: 330px;
+                            }
+                            &#image-horiz{
+                                width: 230px;
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .gallery{
+        height: 1600px;
+        padding-top: 100px;
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img{
+                            &#image-verti{
+                                width: 200px;
+                                height: 300px;
+                            }
+                            &#image-horiz{
+                                width: 200px;
+                                height: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .gallery{
+        height: 1300px;
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img{
+                            &#image-verti{
+                                width: 150px;
+                                height: 250px;
+                            }
+                            &#image-horiz{
+                                width: 150px;
+                                height: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .gallery{
+        height: 1150px;
+        .container{
+            .row{
+                .col-xs-6{
+                    .image-link{
+                        img{
+                            &#image-verti{
+                                width: 120px;
+                                height: 220px;
+                            }
+                            &#image-horiz{
+                                width: 120px;
+                                height: 50px;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

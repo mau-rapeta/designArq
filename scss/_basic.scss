@@ -1,0 +1,44 @@
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: $font1;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #fff;
+}
+
+a *,
+a:link,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.onlyDesktop{
+    display: block;
+}
+
+.onlyMobile{
+    display: none;
+}
+
+@media screen and (max-width: 991px){
+    .onlyDesktop{
+        display: none;
+    }
+    
+    .onlyMobile{
+        display: block;
+    }
+}
